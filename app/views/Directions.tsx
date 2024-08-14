@@ -14,7 +14,7 @@ export const Directions = () => {
         sizeToGrow: 1.5,
     })
     return (
-        <section className="section__container gap-10 pt-20">
+        <section className="section__container gap-2 pt-2 directions">
             <div ref={ref} className="scroll__container" />
             <motion.div style={{ y: simpleTop, scale: simpleScale }}>
                 <Image
@@ -26,7 +26,7 @@ export const Directions = () => {
                 />
             </motion.div>
 
-            <Divider className="my-[49px] px-4" />
+            <Divider className="my-4 px-4" />
 
             <motion.div
                 className="flex flex-col w-full justify-center"

@@ -52,7 +52,7 @@
 }
 
 .fall {
-    animation: fall 2s ease infinite;
+    animation: fall 4s ease infinite;
 }
 
 @keyframes fall {
@@ -65,7 +65,7 @@
 }
 
 .fall--left {
-    animation: fall--left 2s ease infinite;
+    animation: fall--left 4s ease infinite;
 }
 
 @keyframes fall--left {
@@ -78,7 +78,7 @@
 }
 
 .fall--right {
-    animation: fall--right 2s ease infinite;
+    animation: fall--right 4s ease infinite;
 }
 
 @keyframes fall--right {

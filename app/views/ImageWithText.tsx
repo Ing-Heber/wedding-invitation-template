@@ -18,11 +18,11 @@ export const ImageWithText = () => {
     })
 
     return (
-        <section className="section__container px-4 pt-32">
+        <section className="section__container px-4 pt-4 image-with-text">
             <div className="scroll__container" ref={ref} />
             <Image
                 alt="Foto de Raquel y Miguel"
-                className="w-full"
+                className="portrait__img"
                 height={315}
                 src={'/Image_1.png'}
                 width={357}
@@ -61,11 +61,11 @@ export const ImageWithText2 = () => {
     })
 
     return (
-        <section className="section__container px-4 pt-32">
+        <section className="section__container px-4 pt-4 image-with-text">
             <div className="scroll__container" ref={ref} />
             <Image
                 alt="Foto de Raquel y Miguel"
-                className="w-full"
+                className="portrait__img"
                 height={315}
                 src={'/Image_2.png'}
                 width={357}

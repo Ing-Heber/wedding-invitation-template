@@ -20,15 +20,7 @@ const Sections = [
 export const SectionsList = () => {
     return (
         <motion.div initial={false}>
-            {Sections.map((section, index) => (
-                <motion.div
-                    key={index}
-                    animate={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                >
-                    {section}
-                </motion.div>
-            ))}
+            {Sections.map((section, index) => section)}
         </motion.div>
     )
 }

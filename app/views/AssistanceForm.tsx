@@ -5,7 +5,6 @@ import React, { useRef } from 'react'
 import { useParallax } from '@/app/hooks/useParallax'
 import { Divider } from '../components/divider/Divider'
 import { Button } from '../components/button/Button'
-import { InputText } from '../components/input-text/InputText'
 
 export const AssistanceForm = () => {
     const ref = useRef(null)
@@ -16,7 +15,7 @@ export const AssistanceForm = () => {
     })
 
     return (
-        <section className="section__container pt-32">
+        <section className="section__container pt-8 assistance-form">
             <div className="scroll__container" ref={ref} />
             <motion.div style={{ scale: toGrow }}>
                 <Image
@@ -27,7 +26,7 @@ export const AssistanceForm = () => {
                 />
             </motion.div>
 
-            <Divider className="my-12 w-full px-4" />
+            <Divider className="my-8 w-full px-4" />
 
             <motion.div
                 className="w-full"
@@ -42,10 +41,10 @@ export const AssistanceForm = () => {
                 </p>
 
                 <form
-                    className="flex flex-col items-center gap-8 mt-28 mb-8"
-                    action="#"
+                    className="flex flex-col items-center gap-8 mt-12 mb-8"
+                    action="https://forms.gle/4GfcaDvu5cPiLQyj7"
+                    target="_blank"
                 >
-                    <InputText placeholder="Escribe tu nombre o el de tu familia" />
                     <Button className="text-sm w-fit">Confirmar</Button>
                 </form>
             </motion.div>

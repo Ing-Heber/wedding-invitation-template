@@ -23,6 +23,7 @@ html, body, section {
 
 html {
     scroll-snap-type: y mandatory;
+    height: fit-content;
 }
 
 @layer utilities {

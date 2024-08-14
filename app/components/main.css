@@ -105,3 +105,79 @@
         max-width: 350px;
     }
 }
+
+
+@media (min-width: 425px) {
+    section.section__container img.portrait__img {
+        min-width: 357px;
+        width: 100%;
+    }
+
+    section.section__container.hero {
+        gap: 40px;
+    }
+
+    section.section__container.hero div.hero__header {
+        padding-top: 100px;
+        gap: 2.25rem;
+    }
+
+    section.section__container.hero img {
+        width: fit-content;
+    }
+
+    /*    Image with text   */
+    section.section__container.image-with-text {
+        padding-top: 8rem;
+    }
+
+    /*  Assistance Form  */
+    section.section__container.assistance-form {
+        padding-top: 8rem;
+    }
+
+    section.section__container.assistance-form .divider__container {
+        margin-block: 3rem;
+    }
+
+    section.section__container.assistance-form form {
+        margin-top: 7rem
+    }
+
+    /*  Directions  */
+    section.section__container.directions {
+        padding-top: 5rem;
+        gap: 2.5rem
+    }
+
+    section.section__container.directions .divider__container {
+        margin-block: 49px;
+    }
+
+    /*  Reminders   */
+    section.section__container.reminders {
+        padding-top: 89px;
+    }
+
+    section.section__container.reminders .divider__container {
+        margin-block: 1.5rem;
+    }
+
+    section.section__container.reminders .reminders-list {
+        gap: 1.75rem
+    }
+
+    /*  Conclusion  */
+    section.section__container.conclusion {
+        padding-top: 100px;
+    }
+
+    section.section__container.conclusion img.portrait__img {
+        min-width: 357px;
+        width: 100%;
+    }
+
+    section.section__container.conclusion .divider__container {
+        margin-block: 2.5rem;
+    }
+}

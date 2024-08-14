@@ -13,7 +13,7 @@ export const Reminders = () => {
     })
 
     return (
-        <section className="section__container pt-[89px] pb-[29px] px-[17px]">
+        <section className="reminders section__container pt-4 px-[17px]">
             <div ref={ref} className="scroll__container" />
 
             <motion.h2
@@ -23,74 +23,53 @@ export const Reminders = () => {
                 Recordatorios Finales
             </motion.h2>
 
-            <Divider className="my-6" />
+            <Divider className="my-2" />
 
-            <div className="flex flex-col gap-7">
-                <motion.p
-                    style={{ y: simpleTop, scale: simpleScale }}
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                >
+            <motion.div
+                className="flex flex-col gap-3 reminders-list"
+                style={{ y: simpleTop, scale: simpleScale }}
+            >
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Por favor ir bien bañaditos <br /> y perfumados, pero no más
                     que <br />
                     los novios 🤵🏻👰🏻‍♀️
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Asistir con toda la actitud <br />
                     para bailar hasta que se te <br />
                     hinchen los pies 💃🏻🕺🏻
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Recuerda que el ambiente <br />
                     lo hacemos todos, así que coopera <br />y no te quedes
                     sentado 🥳🎉🎊
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     La comida es para disfrutarse <br />
                     con nosotros, asi que <br />
                     no te la lleves para después 😉🍽️
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Ya sabemos que <br />
                     con tu presencia basta <br />
                     pero déjanos sentir tu aprecio 🎁🛍️
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Hemos elegido a cada uno de ustedes <br />
                     por el aprecio que sentimos <br />
                     y con mucho tiempo de antelación, <br />
                     por favor no nos falles 📅
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     No olvides ser modesto <br />
                     y tener buen juicio al elegir <br />
                     tu atuendo 👗👔
-                </motion.p>
-                <motion.p
-                    className="text-xs font-thin font-montserrat text-center tracking-[0.383px]"
-                    style={{ y: simpleTop, scale: simpleScale }}
-                >
+                </p>
+                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Evita los colores blanco, púrpura y gris; <br />
                     ya que serán propios de los novios ⚪⚪️🟣
-                </motion.p>
-            </div>
+                </p>
+            </motion.div>
         </section>
     )
 }

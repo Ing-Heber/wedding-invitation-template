@@ -14,29 +14,30 @@ export const Hero = () => {
         sizeToGrow: 1.5,
     })
     return (
-        <section id={'#hero'} className="section__container gap-10">
+        <section className="section__container hero">
             <div className="scroll__container" ref={heroRef} />
             <motion.div
-                className="flex flex-col items-center gap-9 pt-[100px]"
+                className="flex flex-col items-center gap-9 pt-10 hero__header"
                 style={{ scale: toShrink }}
             >
                 <Image
+                    className="w-full"
                     src={'/raquel-miguel-logo.svg'}
-                    width={181}
+                    width={170}
                     height={164}
                     alt="Foto de Raquel y Miguel"
                 />
 
                 <Image
                     src={'/hero-flower.svg'}
-                    width={255}
+                    width={200}
                     height={127}
                     alt="Foto de arreglo floral"
                 />
 
                 <Image
                     src={'/date.svg'}
-                    width={243}
+                    width={200}
                     height={73}
                     alt="Foto fecha de boda"
                 />
@@ -57,7 +58,7 @@ export const Hero = () => {
                         alt="Arreglos florales"
                     />
                 </motion.div>
-                <div className="flex flex-col items-center mt-5">
+                <div className="flex flex-col items-center">
                     <motion.p
                         className="font-montserrat text-md uppercase text-mauve-mist tracking-[0.48px]"
                         style={{ y: toRight }}

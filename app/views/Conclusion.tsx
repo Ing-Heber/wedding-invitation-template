@@ -21,16 +21,17 @@ export const Conclusion = () => {
     }
 
     return (
-        <section className="section__container pt-[100px] pb-[114px] px-[17px]">
+        <section className="conclusion section__container pt-4 pb-[114px] px-[17px]">
             <div ref={ref} className="scroll__container" />
             <motion.div
                 className="flex flex-col gap-12"
                 style={{ y: simpleTop, scale: simpleScale }}
             >
                 <Image
+                    className="portrait__img w-full"
                     src={'/Image_3.png'}
-                    width={357}
-                    height={315}
+                    width={200}
+                    height={168}
                     alt="Foto de Raquel y Miguel"
                 />
 
@@ -45,13 +46,13 @@ export const Conclusion = () => {
                 </div>
             </motion.div>
 
-            <Divider className="my-10" />
+            <Divider className="my-4" />
 
             <motion.div style={{ scale: simpleScale }}>
                 <Image
                     src={'/logo.svg'}
-                    width={334}
-                    height={160}
+                    width={234}
+                    height={60}
                     alt="Foto nombre de Raquel y Miguel"
                 />
             </motion.div>
