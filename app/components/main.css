@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    button.default {
+        border: 1px solid var(--pearl-blush);
+        border-radius: 32px;
+        min-height: 32px;
+        padding-inline: 31px;
+    }
+
+    button.default:hover,
+    button.default:focus-within {
+        background-color: var(--pearl-blush);
+        color: var(--midnight-plum);
+        outline: none;
+    }
+
+    button.text {
+        background-color: unset;
+        border: none;
+        color: var(--mauve-mist);
+    }
+
+    button.text:hover,
+    button.text:focus-visible {
+        color: var(--pearl-blush);
+        outline: none;
+    }
+
+    /* Text */
+    .text__header {
+        font-family: 'Playfair Display', serif;
+    }
+
+    .text__content {
+        font-family: 'Montserrat', sans-serif;
+        white-space: pre-wrap;
+    }
+
+    /* Input Text */
+    .input--text:hover,
+    .input--text:focus-within {
+        outline: none;
+        opacity: 1;
+    }
+
+    .circle {
+        background-image: url('../../public/petal.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(20px);
+        height: 82px;
+        opacity: .5;
+        width: 92px;
+    }
+
+    .text__container {
+        margin: 0;
+        color: var(--pearl-blush);
+        font-size: 56px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 1.2;
+        position: relative;
+    }
+
+    section.section__container {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-inline: auto;
+        max-width: 500px;
+        overflow: hidden;
+        perspective: 500px;
+        position: relative;
+        scroll-snap-align: center;
+        width: 100%;
+        z-index: 20;
+    }
+
+    section.section__container > div.scroll__container {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        height: 20px;
+        margin-block: auto;
+        width: 20px;
+    }
+
+    section.section__container > img {
+        margin-inline: auto;
+        max-width: 350px;
+    }
+}
