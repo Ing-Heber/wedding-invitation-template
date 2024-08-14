@@ -21,7 +21,7 @@ export const Conclusion = () => {
     }
 
     return (
-        <section className="conclusion section__container pt-4 pb-[114px] px-[17px]">
+        <section className="conclusion section__container pt-4 px-[17px]">
             <div ref={ref} className="scroll__container" />
             <motion.div
                 className="flex flex-col gap-12"

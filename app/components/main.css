@@ -107,7 +107,8 @@
 }
 
 
-@media (min-width: 425px) {
+@media screen and (min-width: 425px) {
+    /*      Hero    */
     section.section__container img.portrait__img {
         min-width: 357px;
         width: 100%;
@@ -125,7 +126,7 @@
     section.section__container.hero img {
         width: fit-content;
     }
-
+    
     /*    Image with text   */
     section.section__container.image-with-text {
         padding-top: 8rem;
@@ -169,11 +170,11 @@
 
     /*  Conclusion  */
     section.section__container.conclusion {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     section.section__container.conclusion img.portrait__img {
-        min-width: 357px;
+        min-width: 337px;
         width: 100%;
     }
 

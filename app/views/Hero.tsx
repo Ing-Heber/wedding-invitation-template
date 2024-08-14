@@ -43,18 +43,17 @@ export const Hero = () => {
                 />
             </motion.div>
 
-            <div className="flex flex-col relative min-h-[223px] h-full justify-center w-full">
+            <div className="footer-image__container flex flex-col relative min-h-[223px] h-full w-full justify-center">
                 <motion.div
-                    className="h-full w-full absolute left-0 right-0 bottom-0"
+                    className="h-[230px] mt-auto absolute left-0 right-0 bottom-0"
                     style={{
                         scale: toGrow,
                     }}
                 >
                     <Image
-                        className="h-full w-full"
+                        className="h-full w-full mt-auto mx-auto"
                         src={'/bottom-flowers.svg'}
-                        height={500}
-                        width={393}
+                        fill
                         alt="Arreglos florales"
                     />
                 </motion.div>
