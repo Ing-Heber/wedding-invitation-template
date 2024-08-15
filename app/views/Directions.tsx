@@ -14,14 +14,14 @@ export const Directions = () => {
         sizeToGrow: 1.5,
     })
     return (
-        <section className="section__container gap-2 pt-2 directions">
+        <section className="section__container gap-2 pt-6 directions">
             <div ref={ref} className="scroll__container" />
             <motion.div style={{ y: simpleTop, scale: simpleScale }}>
                 <Image
-                    className="mt-[30px]"
+                    className="portrait__img"
                     src={'/logo.svg'}
-                    width={334}
-                    height={160}
+                    width={300}
+                    height={155}
                     alt="Foto nombre de Raquel y Miguel"
                 />
             </motion.div>

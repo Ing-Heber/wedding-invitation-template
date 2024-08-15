@@ -100,9 +100,8 @@
         width: 20px;
     }
 
-    section.section__container > img {
+    section.section__container img.portrait__img {
         margin-inline: auto;
-        max-width: 350px;
     }
 }
 

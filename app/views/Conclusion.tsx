@@ -21,16 +21,16 @@ export const Conclusion = () => {
     }
 
     return (
-        <section className="conclusion section__container pt-4 px-[17px]">
+        <section className="conclusion section__container pt-6 px-[17px] gap-8">
             <div ref={ref} className="scroll__container" />
             <motion.div
                 className="flex flex-col gap-12"
                 style={{ y: simpleTop, scale: simpleScale }}
             >
                 <Image
-                    className="portrait__img w-full"
+                    className="portrait__img"
                     src={'/Image_3.png'}
-                    width={200}
+                    width={220}
                     height={168}
                     alt="Foto de Raquel y Miguel"
                 />
@@ -46,7 +46,7 @@ export const Conclusion = () => {
                 </div>
             </motion.div>
 
-            <Divider className="my-4" />
+            <Divider />
 
             <motion.div style={{ scale: simpleScale }}>
                 <Image
@@ -57,11 +57,7 @@ export const Conclusion = () => {
                 />
             </motion.div>
 
-            <Button
-                onClick={() => scrollToTop()}
-                className="mt-[32px]"
-                btnType="text"
-            >
+            <Button onClick={() => scrollToTop()} btnType="text">
                 Volver a empezar
             </Button>
         </section>

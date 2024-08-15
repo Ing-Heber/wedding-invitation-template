@@ -18,7 +18,7 @@ export const ImageWithText = () => {
     })
 
     return (
-        <section className="section__container px-4 pt-4 image-with-text">
+        <section className="section__container px-4 pt-6 image-with-text">
             <div className="scroll__container" ref={ref} />
             <Image
                 alt="Foto de Raquel y Miguel"
@@ -61,7 +61,7 @@ export const ImageWithText2 = () => {
     })
 
     return (
-        <section className="section__container px-4 pt-4 image-with-text">
+        <section className="section__container px-4 pt-6 image-with-text">
             <div className="scroll__container" ref={ref} />
             <Image
                 alt="Foto de Raquel y Miguel"
