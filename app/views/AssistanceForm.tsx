@@ -8,7 +8,7 @@ import { Button } from '../components/button/Button'
 
 export const AssistanceForm = () => {
     const ref = useRef(null)
-    const { toGrow, toRight, toLeft } = useParallax({
+    const { toGrow, toRight: y } = useParallax({
         ref: ref,
         distanceInline: 400,
         sizeToGrow: 1.5,
@@ -31,7 +31,7 @@ export const AssistanceForm = () => {
             <motion.div
                 className="w-full"
                 transition={{ duration: 10 }}
-                style={{ y: toRight }}
+                style={{ y }}
             >
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Por favor escribe tu nombre o el de tu <br />

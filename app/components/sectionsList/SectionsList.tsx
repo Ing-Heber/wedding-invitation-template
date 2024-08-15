@@ -20,7 +20,7 @@ const Sections = [
 export const SectionsList = () => {
     return (
         <motion.div initial={false}>
-            {Sections.map((section, index) => section)}
+            {Sections.map((section) => section)}
         </motion.div>
     )
 }

@@ -6,7 +6,11 @@ import { motion } from 'framer-motion'
 
 export const Hero = () => {
     const heroRef = useRef(null)
-    const { toGrow, toShrink, toRight, toLeft, toBottom } = useParallax({
+    const {
+        toGrow,
+        toShrink,
+        toRight: y,
+    } = useParallax({
         ref: heroRef,
         distanceInline: 400,
         distanceBlock: 100,
@@ -57,10 +61,10 @@ export const Hero = () => {
                         alt="Arreglos florales"
                     />
                 </motion.div>
-                <div className="flex flex-col items-center">
+                <div className="action__container flex flex-col items-center">
                     <motion.p
                         className="font-montserrat text-md uppercase text-mauve-mist tracking-[0.48px]"
-                        style={{ y: toRight }}
+                        style={{ y }}
                     >
                         swipe
                     </motion.p>
