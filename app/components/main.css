@@ -154,6 +154,10 @@
         margin-block: 30px;
     }
 
+    section.section__container.directions .map {
+        width: 273px;
+    }
+
     /*  Reminders   */
     section.section__container.reminders {
         padding-top: 70px;
