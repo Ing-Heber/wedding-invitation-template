@@ -21,7 +21,7 @@ export const Conclusion = () => {
     }
 
     return (
-        <section className="conclusion section__container pt-6 px-[17px] gap-8">
+        <section className="conclusion section__container pt-6 px-[17px] gap-7">
             <div ref={ref} className="scroll__container" />
             <motion.div
                 className="flex flex-col gap-12"
@@ -35,12 +35,12 @@ export const Conclusion = () => {
                     alt="Foto de Raquel y Miguel"
                 />
 
-                <div>
+                <div className="flex flex-col gap-3">
                     <Text
                         className="my-12"
-                        header="El Cantar de los Cantares 4:9"
+                        header="El Cantar de los Cantares 8:6 "
                         content={
-                            '"(...) con tan solo una mirada de\n esos ojos tuyos, me has robado\n el corazón"'
+                            '"Ponme como sello sobre tu corazón, como un sello sobre tu brazo, porque el amor es tan fuerte como la muerte".'
                         }
                     />
                 </div>
@@ -53,7 +53,8 @@ export const Conclusion = () => {
                     src={'/logo.svg'}
                     width={234}
                     height={60}
-                    alt="Foto nombre de Raquel y Miguel"
+                    alt="Raquel y Miguel Logo"
+                    className="logo"
                 />
             </motion.div>
 

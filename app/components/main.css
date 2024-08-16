@@ -107,18 +107,18 @@
 
 
 @media screen and (min-width: 425px) {
-    /*      Hero    */
     section.section__container img.portrait__img {
         max-width: 317px;
         width: 100%;
     }
 
+    /*      Hero    */
     section.section__container.hero {
+        padding-top: 2.75rem;
         gap: 40px;
     }
 
     section.section__container.hero div.hero__header {
-        padding-top: 100px;
         gap: 2.25rem;
     }
 
@@ -128,21 +128,22 @@
 
     /*    Image with text   */
     section.section__container.image-with-text {
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
 
     /*  Assistance Form  */
     section.section__container.assistance-form {
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
 
     section.section__container.assistance-form .divider__container {
         margin-block: 3rem;
     }
 
-    section.section__container.assistance-form form {
-        margin-top: 7rem
+    section.section__container.assistance-form img.bottom-flowers {
+        height: fit-content !important;
     }
+
 
     /*  Directions  */
     section.section__container.directions {
@@ -177,6 +178,10 @@
     }
 
     section.section__container.conclusion .divider__container {
-        margin-block: 2.5rem;
+        margin-block: 1rem;
+    }
+
+    section.section__container.conclusion img.logo {
+        width: 290px;
     }
 }

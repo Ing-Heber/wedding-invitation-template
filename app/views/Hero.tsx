@@ -20,6 +20,10 @@ export const Hero = () => {
     return (
         <section className="section__container hero">
             <div className="scroll__container" ref={heroRef} />
+            <audio autoPlay loop src="/LOVE.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
             <motion.div
                 className="flex flex-col items-center gap-9 pt-10 hero__header"
                 style={{ scale: toShrink }}

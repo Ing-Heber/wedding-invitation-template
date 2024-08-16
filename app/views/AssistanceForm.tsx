@@ -33,19 +33,24 @@ export const AssistanceForm = () => {
                 transition={{ duration: 10 }}
                 style={{ y }}
             >
-                <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
-                    Por favor escribe tu nombre o el de tu <br />
-                    familia
-                    <br />
-                    para confirmar tu asistencia.
-                </p>
-
                 <form
-                    className="flex flex-col items-center gap-8 mt-12 mb-8"
+                    className="flex flex-col items-center gap-6"
                     action="https://forms.gle/4GfcaDvu5cPiLQyj7"
                     target="_blank"
                 >
-                    <Button className="text-sm w-fit">Confirmar</Button>
+                    <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
+                        ¡Estamos emocionados de que puedas unirte <br /> a
+                        nosotros en nuestro día especial!
+                    </p>
+
+                    <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
+                        Por favor, confirma tu asistencia para que podamos
+                        asegurar tu lugar en la celebración.
+                    </p>
+
+                    <Button btnType="default" className="w-[190px]">
+                        Confirmar
+                    </Button>
                 </form>
             </motion.div>
 
@@ -54,10 +59,10 @@ export const AssistanceForm = () => {
                 style={{ scale: toGrow }}
             >
                 <Image
-                    className="mt-auto absolute left-0 right-0"
+                    className="bottom-flowers mt-auto absolute left-0 right-0"
                     src={'/bottom-flowers.svg'}
                     fill
-                    alt="Foto nombre de Raquel y Miguel"
+                    alt="Arreglos florales"
                 />
             </motion.div>
         </section>

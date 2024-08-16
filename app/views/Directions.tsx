@@ -36,7 +36,7 @@ export const Directions = () => {
                     <Image
                         className="rounded-[25px] mx-auto map"
                         src={'/map.svg'}
-                        width={200}
+                        width={250}
                         height={188}
                         alt="Foto nombre de Raquel y Miguel"
                     />
@@ -56,14 +56,6 @@ export const Directions = () => {
                     <Button type="submit" btnType="default">
                         Como llegar
                     </Button>
-                </form>
-
-                <form
-                    className="flex justify-center"
-                    action="https://forms.gle/4GfcaDvu5cPiLQyj7"
-                    target="_blank"
-                >
-                    <Button className="text-sm w-fit">Confirmar</Button>
                 </form>
             </motion.div>
         </section>
