@@ -6,7 +6,7 @@ import { BackgroundItems } from '@/app/components/background/BackgroundItems'
 
 export default function Home() {
     return (
-        <main>
+        <main className="relative">
             <BackgroundItems />
             <SectionsList />
         </main>

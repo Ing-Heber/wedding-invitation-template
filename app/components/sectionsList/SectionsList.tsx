@@ -1,11 +1,30 @@
-'use client'
-import { Hero } from '@/app/views/Hero'
-import { ImageWithText, ImageWithText2 } from '@/app/views/ImageWithText'
-import { Directions } from '@/app/views/Directions'
-import { Reminders } from '@/app/views/Reminders'
+import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
-import { Conclusion } from '@/app/views/Conclusion'
-import { AssistanceForm } from '@/app/views/AssistanceForm'
+import { Hero } from '@/app/views'
+import { AudioPlayer } from '@/app/components'
+
+const AssistanceForm = dynamic(() =>
+    import('@/app/views/AssistanceForm').then((mod) => mod.AssistanceForm)
+)
+const Conclusion = dynamic(() =>
+    import('@/app/views/Conclusion').then((mod) => mod.Conclusion)
+)
+
+const Directions = dynamic(() =>
+    import('@/app/views/Directions').then((mod) => mod.Directions)
+)
+
+const ImageWithText = dynamic(() =>
+    import('@/app/views/ImageWithText').then((mod) => mod.ImageWithText)
+)
+
+const ImageWithText2 = dynamic(() =>
+    import('@/app/views/ImageWithText').then((mod) => mod.ImageWithText2)
+)
+
+const Reminders = dynamic(() =>
+    import('@/app/views/Reminders').then((mod) => mod.Reminders)
+)
 
 const Sections = [
     <Hero key={'Section-1'} />,
@@ -19,8 +38,9 @@ const Sections = [
 
 export const SectionsList = () => {
     return (
-        <motion.div initial={false}>
+        <motion.div className="relative" initial={false}>
             {Sections.map((section) => section)}
+            <AudioPlayer key={'Section-0'} id={'song'} src={'/LOVE.mp3'} />
         </motion.div>
     )
 }

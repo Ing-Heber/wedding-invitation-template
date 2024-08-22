@@ -18,8 +18,7 @@
         padding-inline: 31px;
     }
 
-    button.default:hover,
-    button.default:focus-within {
+    button.default:hover {
         background-color: var(--pearl-blush);
         color: var(--midnight-plum);
         outline: none;
@@ -60,7 +59,7 @@
         background-size: cover;
         filter: blur(20px);
         height: 82px;
-        opacity: .5;
+        opacity: 0.5;
         width: 92px;
     }
 
@@ -105,9 +104,9 @@
     }
 }
 
-
 @media screen and (min-width: 425px) {
     section.section__container img.portrait__img {
+        height: auto;
         max-width: 317px;
         width: 100%;
     }
@@ -126,6 +125,10 @@
         width: fit-content;
     }
 
+    section.section__container.hero div.footer-image__container {
+        justify-content: center;
+    }
+
     /*    Image with text   */
     section.section__container.image-with-text {
         padding-top: 5rem;
@@ -142,13 +145,13 @@
 
     section.section__container.assistance-form img.bottom-flowers {
         height: fit-content !important;
+        width: fit-content !important;
     }
-
 
     /*  Directions  */
     section.section__container.directions {
         padding-top: 5rem;
-        gap: 2.5rem
+        gap: 2.5rem;
     }
 
     section.section__container.directions .divider__container {
@@ -156,6 +159,7 @@
     }
 
     section.section__container.directions .map {
+        height: auto;
         width: 273px;
     }
 
@@ -169,7 +173,7 @@
     }
 
     section.section__container.reminders .reminders-list {
-        gap: 1.50rem
+        gap: 1.5rem;
     }
 
     /*  Conclusion  */
@@ -182,6 +186,7 @@
     }
 
     section.section__container.conclusion img.logo {
-        width: 290px;
+        height: auto;
+        width: 280px;
     }
 }

@@ -18,7 +18,7 @@ export const Directions = () => {
             <div ref={ref} className="scroll__container" />
             <motion.div style={{ y: simpleTop, scale: simpleScale }}>
                 <Image
-                    className="portrait__img"
+                    className="portrait__img h-[155px] w-[300px]"
                     src={'/logo.svg'}
                     width={300}
                     height={155}
@@ -34,7 +34,7 @@ export const Directions = () => {
             >
                 <div className="iframe">
                     <Image
-                        className="rounded-[25px] mx-auto map"
+                        className="map rounded-[25px] mx-auto h-[188px] w-[250px]"
                         src={'/map.svg'}
                         width={250}
                         height={188}

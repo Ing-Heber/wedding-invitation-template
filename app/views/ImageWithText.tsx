@@ -42,10 +42,11 @@ export const ImageWithText = () => {
             </motion.div>
             <motion.div style={{ y: toBottom, x: toLeft }}>
                 <Image
+                    alt="Foto de arreglo floral"
+                    className="h-12 w-16"
+                    height={47.9}
                     src={'/flower.svg'}
                     width={61}
-                    height={47.9}
-                    alt="Foto de arreglo floral"
                 />
             </motion.div>
         </section>
@@ -85,10 +86,10 @@ export const ImageWithText2 = () => {
             </motion.div>
             <motion.div style={{ y: toBottom, x: toRight }}>
                 <Image
+                    alt="Foto de arreglos florales"
+                    height={38}
                     src={'/double-flower.svg'}
                     width={119}
-                    height={38}
-                    alt="Foto de arreglos florales"
                 />
             </motion.div>
         </section>

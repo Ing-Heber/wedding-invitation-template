@@ -20,38 +20,36 @@ export const Hero = () => {
     return (
         <section className="section__container hero">
             <div className="scroll__container" ref={heroRef} />
-            <audio autoPlay loop src="/LOVE.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-            </audio>
             <motion.div
                 className="flex flex-col items-center gap-9 pt-10 hero__header"
                 style={{ scale: toShrink }}
             >
                 <Image
-                    className="w-full"
+                    alt="Foto de Raquel y Miguel"
+                    className="h-[164px] w-[170px]"
+                    height={164}
                     src={'/raquel-miguel-logo.svg'}
                     width={170}
-                    height={164}
-                    alt="Foto de Raquel y Miguel"
                 />
 
                 <Image
+                    alt="Foto de arreglo floral"
+                    className="h-32 w-52"
+                    height={127}
                     src={'/hero-flower.svg'}
                     width={200}
-                    height={127}
-                    alt="Foto de arreglo floral"
                 />
 
                 <Image
+                    alt="Foto fecha de boda"
+                    className="h-[73px] w-[200px]"
+                    height={73}
                     src={'/date.svg'}
                     width={200}
-                    height={73}
-                    alt="Foto fecha de boda"
                 />
             </motion.div>
 
-            <div className="footer-image__container flex flex-col relative min-h-[223px] h-full w-full justify-center">
+            <div className="footer-image__container flex flex-col relative min-h-[223px] h-full w-full pt-[30px]">
                 <motion.div
                     className="h-[230px] mt-auto absolute left-0 right-0 bottom-0"
                     style={{
@@ -59,10 +57,10 @@ export const Hero = () => {
                     }}
                 >
                     <Image
-                        className="h-full w-full mt-auto mx-auto"
-                        src={'/bottom-flowers.svg'}
-                        fill
                         alt="Arreglos florales"
+                        className="h-full w-full mt-auto mx-auto"
+                        fill
+                        src={'/bottom-flowers.svg'}
                     />
                 </motion.div>
                 <div className="action__container flex flex-col items-center">
@@ -73,11 +71,11 @@ export const Hero = () => {
                         swipe
                     </motion.p>
                     <Image
-                        className="bounce mt-[-10px]"
+                        alt="Swipe icon"
+                        className="bounce mt-[-10px] h-[96px] w-[79px]"
+                        height={96}
                         src={'/swipe-icon.svg'}
                         width={79}
-                        height={96}
-                        alt="Swipe icon"
                     />
                 </div>
             </div>

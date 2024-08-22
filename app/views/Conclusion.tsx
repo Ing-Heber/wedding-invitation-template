@@ -15,24 +15,24 @@ export const Conclusion = () => {
         sizeToGrow: 1.9,
     })
 
-    function scrollToTop() {
+    const scrollToTop = () => {
         if (!isBrowser()) return
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
     return (
-        <section className="conclusion section__container pt-6 px-[17px] gap-7">
+        <section className="conclusion section__container pt-6 px-[17px] gap-5">
             <div ref={ref} className="scroll__container" />
             <motion.div
-                className="flex flex-col gap-12"
+                className="flex flex-col gap-5 h-fit"
                 style={{ y: simpleTop, scale: simpleScale }}
             >
                 <Image
-                    className="portrait__img"
+                    alt="Foto de Raquel y Miguel"
+                    className="portrait__img h-[200px] w-[220px]"
+                    height={200}
                     src={'/Image_3.png'}
                     width={220}
-                    height={168}
-                    alt="Foto de Raquel y Miguel"
                 />
 
                 <div className="flex flex-col gap-3">
@@ -50,15 +50,15 @@ export const Conclusion = () => {
 
             <motion.div style={{ scale: simpleScale }}>
                 <Image
+                    alt="Raquel y Miguel Logo"
+                    className="logo h-[130px] w-[234px]"
+                    height={130}
                     src={'/logo.svg'}
                     width={234}
-                    height={60}
-                    alt="Raquel y Miguel Logo"
-                    className="logo"
                 />
             </motion.div>
 
-            <Button onClick={() => scrollToTop()} btnType="text">
+            <Button onClick={scrollToTop} btnType="text">
                 Volver a empezar
             </Button>
         </section>

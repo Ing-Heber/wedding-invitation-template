@@ -19,10 +19,11 @@ export const AssistanceForm = () => {
             <div className="scroll__container" ref={ref} />
             <motion.div style={{ scale: toGrow }}>
                 <Image
+                    alt="Foto nombre de Raquel y Miguel"
+                    className="h-[160px] w-[334px]"
+                    height={160}
                     src={'/logo.svg'}
                     width={334}
-                    height={160}
-                    alt="Foto nombre de Raquel y Miguel"
                 />
             </motion.div>
 
@@ -59,10 +60,10 @@ export const AssistanceForm = () => {
                 style={{ scale: toGrow }}
             >
                 <Image
-                    className="bottom-flowers mt-auto absolute left-0 right-0"
-                    src={'/bottom-flowers.svg'}
-                    fill
                     alt="Arreglos florales"
+                    className="bottom-flowers mt-auto mx-auto"
+                    fill
+                    src={'/bottom-flowers.svg'}
                 />
             </motion.div>
         </section>
