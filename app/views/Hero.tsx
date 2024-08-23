@@ -49,7 +49,7 @@ export const Hero = () => {
                 />
             </motion.div>
 
-            <div className="footer-image__container flex flex-col relative min-h-[223px] h-full w-full pt-[30px]">
+            <div className="footer-image__container flex flex-col relative min-h-[223px] h-full w-full">
                 <motion.div
                     className="h-[230px] mt-auto absolute left-0 right-0 bottom-0"
                     style={{

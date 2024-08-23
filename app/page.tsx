@@ -1,14 +1,14 @@
 'use client'
-import './animations.css'
+import { BackgroundItems, SectionsList } from '@/app/components/'
 import './components/main.css'
-import { SectionsList } from './components/sectionsList/SectionsList'
-import { BackgroundItems } from '@/app/components/background/BackgroundItems'
+import './animations.css'
 
 export default function Home() {
     return (
         <main className="relative">
             <BackgroundItems />
             <SectionsList />
+            <div className="h-10"></div>
         </main>
     )
 }

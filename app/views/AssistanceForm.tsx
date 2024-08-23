@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import React, { useRef } from 'react'
 import { useParallax } from '@/app/hooks/useParallax'
-import { Divider } from '../components/divider/Divider'
-import { Button } from '../components/button/Button'
+import { Button, Divider } from '@/app/components'
 
 export const AssistanceForm = () => {
     const ref = useRef(null)

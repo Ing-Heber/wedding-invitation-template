@@ -1,30 +1,14 @@
-import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
-import { Hero } from '@/app/views'
 import { AudioPlayer } from '@/app/components'
-
-const AssistanceForm = dynamic(() =>
-    import('@/app/views/AssistanceForm').then((mod) => mod.AssistanceForm)
-)
-const Conclusion = dynamic(() =>
-    import('@/app/views/Conclusion').then((mod) => mod.Conclusion)
-)
-
-const Directions = dynamic(() =>
-    import('@/app/views/Directions').then((mod) => mod.Directions)
-)
-
-const ImageWithText = dynamic(() =>
-    import('@/app/views/ImageWithText').then((mod) => mod.ImageWithText)
-)
-
-const ImageWithText2 = dynamic(() =>
-    import('@/app/views/ImageWithText').then((mod) => mod.ImageWithText2)
-)
-
-const Reminders = dynamic(() =>
-    import('@/app/views/Reminders').then((mod) => mod.Reminders)
-)
+import {
+    AssistanceForm,
+    Conclusion,
+    Directions,
+    Hero,
+    ImageWithText,
+    ImageWithText2,
+    Reminders,
+} from '@/app/views'
 
 const Sections = [
     <Hero key={'Section-1'} />,

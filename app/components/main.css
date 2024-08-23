@@ -4,11 +4,11 @@
 
 @layer components {
     button {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 100;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 100 !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
     }
 
     button.default {
@@ -179,10 +179,6 @@
     /*  Conclusion  */
     section.section__container.conclusion {
         padding-top: 70px;
-    }
-
-    section.section__container.conclusion .divider__container {
-        margin-block: 1rem;
     }
 
     section.section__container.conclusion img.logo {
