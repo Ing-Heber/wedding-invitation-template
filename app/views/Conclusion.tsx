@@ -17,7 +17,7 @@ export const Conclusion = () => {
 
     const scrollToTop = () => {
         if (!isBrowser()) return
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        window.scrollTo({ top: -1, left: 0, behavior: 'smooth' })
     }
 
     return (
