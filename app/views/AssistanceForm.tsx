@@ -48,7 +48,11 @@ export const AssistanceForm = () => {
                         asegurar tu lugar en la celebración.
                     </p>
 
-                    <Button btnType="default" className="w-[190px]">
+                    <Button
+                        type="submit"
+                        btnType="default"
+                        className="w-[190px]"
+                    >
                         Confirmar
                     </Button>
                 </form>
