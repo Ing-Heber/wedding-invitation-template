@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 import { AudioPlayer } from '@/app/components'
 import {

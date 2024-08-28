@@ -1,5 +1,6 @@
-import { FC, useRef, useState } from 'react'
+'use client'
 import Image from 'next/image'
+import { FC, useRef } from 'react'
 import { useAudio } from '@/app/hooks/useAudio'
 
 interface AudioPlayerProps extends React.HTMLAttributes<HTMLAudioElement> {

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import { useParallax } from '@/app/hooks/useParallax'
 import React, { useRef } from 'react'
+import { useParallax } from '@/app/hooks/useParallax'
 import { motion } from 'framer-motion'
 
 export const Hero = () => {

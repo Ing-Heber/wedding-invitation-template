@@ -1,9 +1,9 @@
 'use client'
-import React, { useRef } from 'react'
 import Image from 'next/image'
+import React, { useRef } from 'react'
 import { useParallax } from '@/app/hooks/useParallax'
 import { motion } from 'framer-motion'
-import { Text } from '@/app/components/text/Text'
+import { Text } from '@/app/components/'
 
 export const ImageWithText = () => {
     const ref = useRef(null)

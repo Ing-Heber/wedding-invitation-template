@@ -1,8 +1,8 @@
 'use client'
-import { Divider } from '@/app/components/divider/Divider'
 import { useRef } from 'react'
-import { useParallax } from '@/app/hooks/useParallax'
 import { motion } from 'framer-motion'
+import { useParallax } from '@/app/hooks/useParallax'
+import { Divider } from '@/app/components/'
 
 export const Reminders = () => {
     const ref = useRef(null)

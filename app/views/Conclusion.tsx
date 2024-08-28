@@ -1,10 +1,9 @@
+'use client'
 import Image from 'next/image'
-import { Divider } from '../components/divider/Divider'
-import { Button } from '../components/button/Button'
-import { Text } from '../components/text/Text'
 import React, { useRef } from 'react'
-import { useParallax } from '@/app/hooks/useParallax'
 import { motion } from 'framer-motion'
+import { useParallax } from '@/app/hooks/useParallax'
+import { Button, Divider, Text } from '../components/'
 
 export const Conclusion = () => {
     const isBrowser = () => typeof window !== 'undefined' //The approach recommended by Next.js

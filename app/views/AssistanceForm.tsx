@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import React, { useRef } from 'react'
+import { motion } from 'framer-motion'
 import { useParallax } from '@/app/hooks/useParallax'
 import { Button, Divider } from '@/app/components'
 

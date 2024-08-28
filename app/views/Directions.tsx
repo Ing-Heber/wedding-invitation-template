@@ -1,9 +1,9 @@
 'use client'
-import React, { useRef } from 'react'
 import Image from 'next/image'
+import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Button, Divider } from '@/app/components'
 import { useParallax } from '@/app/hooks/useParallax'
+import { Button, Divider } from '@/app/components'
 
 export const Directions = () => {
     const ref = useRef(null)
