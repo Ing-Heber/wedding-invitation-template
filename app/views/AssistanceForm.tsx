@@ -28,35 +28,27 @@ export const AssistanceForm = () => {
 
             <Divider className="my-8 w-full px-4" />
 
-            <motion.div
-                className="w-full"
+            <motion.form
+                className="flex flex-col items-center gap-6 z-10"
+                action="https://forms.gle/4GfcaDvu5cPiLQyj7"
+                target="_blank"
                 transition={{ duration: 10 }}
                 style={{ y }}
             >
-                <form
-                    className="flex flex-col items-center gap-6"
-                    action="https://forms.gle/4GfcaDvu5cPiLQyj7"
-                    target="_blank"
-                >
-                    <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
-                        ¡Estamos emocionados de que puedas unirte <br /> a
-                        nosotros en nuestro día especial!
-                    </p>
+                <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
+                    ¡Estamos emocionados de que puedas unirte <br /> a
+                    nosotros en nuestro día especial!
+                </p>
 
-                    <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
-                        Por favor, confirma tu asistencia para que podamos
-                        asegurar tu lugar en la celebración.
-                    </p>
+                <p className="font-montserrat font-thin text-center tracking-[0.48px] leading-[normal]">
+                    Por favor, confirma tu asistencia para que podamos
+                    asegurar tu lugar en la celebración.
+                </p>
 
-                    <Button
-                        type="submit"
-                        btnType="default"
-                        className="w-[190px]"
-                    >
-                        Confirmar
-                    </Button>
-                </form>
-            </motion.div>
+                <Button type="submit" btnType="default">
+                    Confirmar
+                </Button>
+            </motion.form>
 
             <motion.div
                 className="w-full h-full relative"
