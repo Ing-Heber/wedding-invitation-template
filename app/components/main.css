@@ -101,6 +101,163 @@
 
     section.section__container img.portrait__img {
         margin-inline: auto;
+        height: auto;
+        max-width: 200px;
+    }
+
+    section.section__container h2 {
+        font-size: 22px;
+    }
+
+    section.section__container h4 {
+        font-size: 16px;
+    }
+
+    section.section__container p {
+        font-size: 12px;
+    }
+}
+
+/* Hero */
+section.section__container.hero {
+    padding-top: 1.75rem;
+    gap: 15px;
+}
+
+section.section__container.hero div.hero__header {
+    gap: 1rem;
+    padding-top: 0px;
+}
+
+section.section__container.hero div.hero__header img {
+    height: auto;
+}
+
+section.section__container.hero div.hero__header img:nth-child(1) {
+    max-width: 140px;
+}
+
+section.section__container.hero div.hero__header img:nth-child(2) {
+    max-width: 100px;
+}
+
+/* ImageWitText */
+section.section__container.image-with-text div.text__container {
+    margin-block: 1.5rem;
+}
+
+/* Directions */
+
+section.section__container.directions .divider__container {
+    margin-block: 10px;
+}
+
+section.section__container.directions .map {
+    height: auto;
+    max-width: 153px;
+}
+
+/*  Reminders   */
+section.section__container.reminders {
+    padding-top: 10px;
+}
+
+section.section__container.reminders div.reminders-list {
+    gap: 0.5rem;
+}
+
+section.section__container.reminders div.reminders-list br.reminder__br {
+    display: none;
+}
+
+/* Conclusion */
+section.section__container.conclusion {
+    gap: 0.75rem;
+}
+
+section.section__container.conclusion img.logo {
+    height: auto;
+    max-width: 140px;
+}
+
+@media screen and (min-width: 375px) {
+    section.section__container img.portrait__img {
+        height: auto;
+        max-width: 280px;
+        width: 100%;
+    }
+
+    section.section__container h2 {
+        font-size: 38px;
+    }
+
+    section.section__container h4 {
+        font-size: 20px;
+    }
+
+    section.section__container p {
+        font-size: 18px;
+    }
+
+    /* Hero */
+    section.section__container.hero {
+        padding-top: 2.75rem;
+        gap: 15px;
+    }
+
+    section.section__container.hero div.hero__header {
+        gap: 1rem;
+        padding-top: 0px;
+    }
+
+    section.section__container.hero div.hero__header img {
+        height: auto;
+    }
+
+    section.section__container.hero div.hero__header img:nth-child(1),
+    section.section__container.hero div.hero__header img:nth-child(2) {
+        max-width: unset;
+    }
+
+    /* ImageWitText */
+    section.section__container.image-with-text div.text__container {
+        margin-block: 3rem;
+    }
+
+    /* Directions */
+
+    section.section__container.directions .divider__container {
+        margin-block: 1rem;
+    }
+
+    section.section__container.directions .map {
+        max-width: unset;
+    }
+
+    /*  Reminders   */
+    section.section__container.reminders {
+        padding-top: 1rem;
+    }
+
+    section.section__container.reminders div.reminders-list {
+        gap: 0.75rem;
+    }
+
+    section.section__container.reminders div.reminders-list br.reminder__br {
+        display: block;
+    }
+
+    section.section__container.reminders div.reminders-list p {
+        font-size: 0.75rem;
+    }
+
+    /* Conclusion */
+    section.section__container.conclusion {
+        gap: 1.25rem;
+    }
+
+    section.section__container.conclusion img.logo {
+        max-width: unset;
     }
 }
 

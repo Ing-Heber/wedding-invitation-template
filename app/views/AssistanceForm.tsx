@@ -19,7 +19,7 @@ export const AssistanceForm = () => {
             <motion.div style={{ scale: toGrow }}>
                 <Image
                     alt="Foto nombre de Raquel y Miguel"
-                    className="h-[160px] w-[334px]"
+                    className="h-[160px] w-[334px] portrait__img"
                     height={160}
                     src={'/logo.svg'}
                     width={334}

@@ -18,7 +18,7 @@ export const Reminders = () => {
 
             <motion.h2
                 style={{ y: simpleTop, scale: simpleScale }}
-                className="text-[38px] font-normal leading-normal text-center"
+                className="text-[38px] font-normal leading-tight text-center"
             >
                 Recordatorios Finales
             </motion.h2>
@@ -31,38 +31,38 @@ export const Reminders = () => {
             >
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Por favor ir bien bañaditos <br /> y perfumados, pero no más
-                    que <br />
+                    que <br className='reminder__br' />
                     los novios 🤵🏻👰🏻‍♀️
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Asistir con toda la actitud <br />
-                    para bailar hasta que se te <br />
+                    para bailar hasta que se te <br className='reminder__br' />
                     hinchen los pies 💃🏻🕺🏻
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Recuerda que el ambiente <br />
-                    lo hacemos todos, así que coopera <br />y no te quedes
+                    lo hacemos todos, así que coopera <br className='reminder__br' />y no te quedes
                     sentado 🥳🎉🎊
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     La comida es para disfrutarse <br />
-                    con nosotros, asi que <br />
+                    con nosotros, asi que <br className='reminder__br' />
                     no te la lleves para después 😉🍽️
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     Ya sabemos que <br />
-                    con tu presencia basta <br />
+                    con tu presencia basta <br className='reminder__br' />
                     pero déjanos sentir tu aprecio 🎁🛍️
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
-                    Hemos elegido a cada uno de ustedes <br />
+                    Hemos elegido a cada uno de ustedes <br className='reminder__br' />
                     por el aprecio que sentimos <br />
-                    y con mucho tiempo de antelación, <br />
+                    y con mucho tiempo de antelación, <br className='reminder__br' />
                     por favor no nos falles 📅
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">
                     No olvides ser modesto <br />
-                    y tener buen juicio al elegir <br />
+                    y tener buen juicio al elegir <br className='reminder__br' />
                     tu atuendo 👗👔
                 </p>
                 <p className="text-xs font-thin font-montserrat text-center tracking-[0.383px]">

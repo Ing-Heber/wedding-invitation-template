@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useParallax } from '@/app/hooks/useParallax'
 import { Button, Divider, Text } from '../components/'
 
 export const Conclusion = () => {
-    const isBrowser = () => typeof window !== 'undefined' //The approach recommended by Next.js
+    const [scrollSnapType, setScrollSnapType] = useState<'center' | 'none'>('center');
     const ref = useRef(null)
     const { simpleRight: simpleTop, simpleScale } = useParallax({
         ref: ref,
@@ -15,14 +15,19 @@ export const Conclusion = () => {
     })
 
     const scrollToTop = () => {
-        if (!isBrowser()) return
+        setScrollSnapType('none')
+
         setTimeout(() => {
-            window.scroll({ top: -1, left: 0, behavior: 'smooth' })
+            window.scrollTo({ top: 100, left: 0, behavior: 'smooth' })
         }, 10)
+
+        setTimeout(() => {
+            setScrollSnapType('center')
+        }, 1000)
     }
 
     return (
-        <section className="conclusion section__container pt-6 px-[17px] gap-5">
+        <section className="conclusion section__container pt-6 px-[17px] gap-5 h-[90vh]" style={{ scrollSnapAlign: scrollSnapType }}>
             <div ref={ref} className="scroll__container" />
             <motion.div
                 className="flex flex-col gap-5 h-fit"
